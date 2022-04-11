@@ -1,0 +1,23 @@
+
+<%for (var i = 0; i < imagees.length; i++) {%>
+<div class="img-box">
+    <img src="<%=imagees[i].linkAnh%>" alt="" />
+    <div class="transparent-box">
+        <div class="caption">
+            <p><%=imagees[i].noiDung%></p>
+            <p class="opacity-low"><%=imagees[i].ngayThang%></p>
+            <a href="/update_imagees?id=<%=imagees[i]._id%>" class ="btn border-shadow update">
+                <span class ="text-gradient"><i class="fa-solid fa-pen"></i></span>
+            </a>
+            <a class ="btn border-shadow">
+                <span class ="text-gradient"><i class="fa-solid fa-download"></i></span>
+            </a>
+        </div>
+        <a class ="btn border-shadow delete" data-id =<%=imagees[i]._id%> >
+            <span class ="text-gradient"><i class="fa-solid fa-x"></i></span>
+        </a>
+
+    </div>
+</div>
+
+<%}%>
