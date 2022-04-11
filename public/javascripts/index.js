@@ -13,7 +13,7 @@ $("#update_imagees").submit(function(event){
 
     console.log(data)
     var request = {
-        "url" : `http://localhost:5000/api/imagees/${data.id}`,
+        "url" : `https://asmserverandroidminhdtph13562.herokuapp.com/api/imagees/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -29,7 +29,7 @@ if(window.location.pathname == "/"){
     $ondelete.click(function(){
             var id = $(this).attr("data-id")
             var request = {
-                "url" : `http://localhost:5000/api/imagees/${id}`,
+                "url" : `https://asmserverandroidminhdtph13562.herokuapp.com/api/imagees/${id}`,
                 "method" : "DELETE"
             }
 
